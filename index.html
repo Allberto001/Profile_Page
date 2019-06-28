@@ -26,6 +26,18 @@
     width: 200px;
     transform: rotate(0deg);
     }
+    @media screen and (max-width: 600px) {
+   img {
+    height: 650px;
+    width: 100%;
+    object-fit: cover; 
+  }
+  .rounded {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 </style>
 <body>
 
@@ -115,10 +127,6 @@
                                 <option>Event Invite</option>
                                 <option>General</option>
                               </select>
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleFormControlTextarea1">Message</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
                             <button type="submit" class="btn btn-info mb-3">Submit</button>
                           </form>
